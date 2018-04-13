@@ -317,6 +317,7 @@ case "$soc_id" in
     echo 4-7     > /dev/cpuset/foreground/boost/cpus
     echo 0-2,4-7 > /dev/cpuset/foreground/cpus
     echo 0-7     > /dev/cpuset/top-app/cpus
+    echo 0-3     > /dev/cpuset/restricted/cpus
 
     # configure governor settings for little cluster
     echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
