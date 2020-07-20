@@ -177,7 +177,7 @@ case "$soc_id" in
     echo 95 > /proc/sys/kernel/sched_upmigrate
     echo 85 > /proc/sys/kernel/sched_group_downmigrate
     echo 100 > /proc/sys/kernel/sched_group_upmigrate
-    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
+    echo 0 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
     # cpuset settings
     echo 0-3 > /dev/cpuset/background/cpus
@@ -292,7 +292,7 @@ case "$soc_id" in
     echo 95 > /proc/sys/kernel/sched_upmigrate
     echo 85 > /proc/sys/kernel/sched_group_downmigrate
     echo 100 > /proc/sys/kernel/sched_group_upmigrate
-    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
+    echo 0 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
     # cpuset settings
     echo 0-2     > /dev/cpuset/background/cpus
