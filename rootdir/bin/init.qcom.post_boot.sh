@@ -182,8 +182,8 @@ case "$soc_id" in
     echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
     # Setting b.L scheduler parameters
-    echo 67 > /proc/sys/kernel/sched_downmigrate
-    echo 77 > /proc/sys/kernel/sched_upmigrate
+    echo 85 > /proc/sys/kernel/sched_downmigrate
+    echo 95 > /proc/sys/kernel/sched_upmigrate
     echo 85 > /proc/sys/kernel/sched_group_downmigrate
     echo 100 > /proc/sys/kernel/sched_group_upmigrate
     echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
@@ -305,8 +305,8 @@ case "$soc_id" in
     echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
     # Setting b.L scheduler parameters
-    echo 65 > /proc/sys/kernel/sched_downmigrate
-    echo 71 > /proc/sys/kernel/sched_upmigrate
+    echo 85 > /proc/sys/kernel/sched_downmigrate
+    echo 95 > /proc/sys/kernel/sched_upmigrate
     echo 85 > /proc/sys/kernel/sched_group_downmigrate
     echo 100 > /proc/sys/kernel/sched_group_upmigrate
     echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
