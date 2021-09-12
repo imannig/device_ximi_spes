@@ -172,15 +172,6 @@ fi
 case "$soc_id" in
           "417" | "420" | "444" | "445" | "469" | "470" )
 
-    # Core control is temporarily disabled till bring up
-    echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
-    echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
-    # Core control parameters on big
-    echo 40 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
-    echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
-    echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
-    echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
-
     # Setting b.L scheduler parameters
     echo 85 > /proc/sys/kernel/sched_downmigrate
     echo 95 > /proc/sys/kernel/sched_upmigrate
@@ -296,14 +287,6 @@ setprop vendor.post_boot.parsed 1
 case "$soc_id" in
           "518" )
 
-    # Core control parameters on big
-    echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
-    echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
-    echo 40 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
-    echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
-    echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
-    echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
-
     # Setting b.L scheduler parameters
     echo 85 > /proc/sys/kernel/sched_downmigrate
     echo 95 > /proc/sys/kernel/sched_upmigrate
@@ -410,8 +393,6 @@ setprop vendor.post_boot.parsed 1
 # Scuba perf/power tunings
 case "$soc_id" in
           "441" | "471" | "473" | "474" )
-    # Quad-core device. disable core_ctl
-    echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
 
     # Configure schedutil governor settings
     echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
