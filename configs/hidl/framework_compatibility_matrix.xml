@@ -745,14 +745,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hw.touchfeature</name>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchFeature</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.usb</name>
         <version>1.0-2</version>
         <interface>
