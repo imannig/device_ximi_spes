@@ -122,9 +122,6 @@ persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera
 ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Display calib
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
@@ -138,9 +135,6 @@ persist.vendor.dpmhalservice.enable=1
 
 # DRM
 drm.service.enabled=true
-
-# FP
-ro.hardware.fp.sideCap=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -199,9 +193,6 @@ debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 debug.stagefright.omx_default_rank.sw-audio=1
 
-# NFC DT
-ro.nfc.port=I2C
-
 # OTG
 persist.sys.oem.otg_support=true
 
@@ -225,19 +216,10 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
-ril.subscription.types=NV,RUIM
 vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=22,20
 ro.vendor.se.type=HCE,UICC
 telephony.lteOnCdmaDevice=1
-
-# Radio (IMS)
-persist.vendor.ims.disableIMSLogs=1
-persist.vendor.ims.disableADBLogs=1
-persist.vendor.ims.disableDebugDataPathLogs=1
-persist.vendor.ims.disableDebugLogs=1
-persist.vendor.ims.disableSigHandler=1
-persist.vendor.ims.disableQXDMLogs=1
 
 # QSPM
 ro.vendor.qspm.enable=true
