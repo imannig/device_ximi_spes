@@ -239,6 +239,7 @@ service vendor.displayfeature /vendor/bin/displayfeature
     user root
     group root
     writepid /dev/cpuset/system-background/tasks
+    disabled
 
 on property:init.svc.surfaceflinger=stopped
     stop vendor.displayfeature
