@@ -197,9 +197,8 @@ debug.stagefright.omx_default_rank.sw-audio=1
 # OTG
 persist.sys.oem.otg_support=true
 
-# PERF
+# Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf-hal.ver=2.2
 
 # Radio
 persist.radio.multisim.config=dsds
