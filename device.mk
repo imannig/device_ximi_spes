@@ -406,6 +406,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePkgs
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
