@@ -477,8 +477,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.2-service-spes \
-    android.hardware.usb.gadget@1.0-service-spes
+    android.hardware.usb@1.2-service-spes
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
