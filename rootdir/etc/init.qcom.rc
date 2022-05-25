@@ -80,6 +80,7 @@ on late-init
     start surfaceflinger
     start bootanim
     start vendor.configstore-hal
+    start vendor.qti.hardware.display.composer
     start vendor.qti.hardware.display.allocator
 
 on early-boot
