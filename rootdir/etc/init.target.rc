@@ -255,3 +255,6 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     user root
     group system wakelock
     writepid /dev/cpuset/system-background/tasks
+
+on property:ro.boot.hwversion=*
+    setprop vendor.boot.hwversion ${ro.boot.hwversion}
