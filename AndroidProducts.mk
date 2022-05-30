@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_spes.mk
+    $(LOCAL_DIR)/aosp_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_spes-user \
-    awaken_spes-userdebug \
-    awaken_spes-eng
+    aosp_spes-user \
+    aosp_spes-userdebug \
+    aosp_spes-eng

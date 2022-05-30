@@ -12,15 +12,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
 # Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Feature
 TARGET_USES_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
 USE_PIXEL_CHARGING := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+IS_PHONE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ACORE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Product Specifics
-PRODUCT_NAME := awaken_spes
+PRODUCT_NAME := aosp_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
