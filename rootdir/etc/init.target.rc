@@ -188,7 +188,6 @@ on charger
     setprop persist.sys.usb.config mass_storage
     setprop sys.usb.configfs 1
     start mi_thermald
-    start vendor.hvdcp_opti
     setprop vendor.usb.controller 4e00000.dwc3
     start mi_thermald
     start vendor.power_off_alarm
@@ -249,12 +248,6 @@ on property:init.svc.surfaceflinger=running
 
 on property:init.svc.surfaceflinger=restarting
     stop vendor.displayfeature
-
-service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
-    class main
-    user root
-    group system wakelock
-    writepid /dev/cpuset/system-background/tasks
 
 on property:ro.boot.hwversion=*
     setprop vendor.boot.hwversion ${ro.boot.hwversion}
