@@ -17,7 +17,6 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Feature
 TARGET_USES_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
-USE_PIXEL_CHARGING := true
 CUSTOM_BUILD_TYPE := OFFICIAL
 IS_PHONE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
