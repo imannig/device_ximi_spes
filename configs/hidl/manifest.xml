@@ -310,4 +310,14 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IDms/default</fqname>
     </hal>
+    <!-- graphics renderscript-->
+    <hal format="hidl">
+        <name>android.hardware.renderscript</name>
+        <transport arch="32+64">passthrough</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
