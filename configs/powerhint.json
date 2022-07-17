@@ -48,24 +48,24 @@
     },
     {
       "Name": "GPUMaxFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
       "Values": [
-        "0",
-        "1",
-        "2"
+        "1114800000",
+        "1025000000",
+        "785000000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
       "Name": "GPUMinFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
-        "0",
-        "3",
-        "4",
-        "5"
+        "600000000",
+        "465000000",
+        "320000000"
       ],
+      "DefaultIndex": 3,
       "ResetOnInit": true
     },
     {
@@ -218,15 +218,6 @@
       "HoldFd": true
     },
     {
-      "Name": "EnergyAware",
-      "Path": "/proc/sys/kernel/sched_energy_aware",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -252,7 +243,15 @@
         ""
       ],
       "Type": "Property"
-    }
+    },
+    {
+      "Name": "CameraHalCpuset",
+      "Path": "/dev/cpuset/camera-daemon/cpus",
+      "Values": [
+        "0-7"
+      ],
+      "ResetOnInit": true
+    },
   ],
   "Actions": [
     {
@@ -277,7 +276,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "2"
+      "Value": "1114800000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -320,12 +319,6 @@
       "Node": "CPUBWMinFreq",
       "Duration": 0,
       "Value": "7759"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "EnergyAware",
-      "Duration": 3000,
-      "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
@@ -394,24 +387,6 @@
       "Value": "10000"
     },
     {
-      "PowerHint": "LAUNCH",
-      "Node": "DDRLittleClusterMinFreq",
-      "Duration": 3000,
-      "Value": "15960"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "DDRBigClusterMinFreq",
-      "Duration": 3000,
-      "Value": "15960"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
-      "Node": "EnergyAware",
-      "Duration": 1000,
-      "Value": "0"
-    },
-    {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CDSchedtuneBoost",
       "Duration": 1000,
@@ -556,10 +531,10 @@
       "Value": "80"
     },
     {
-      "PowerHint": "CAMERA_SHOT",
-      "Node": "EnergyAware",
-      "Duration": 1000,
-      "Value": "0"
+      "PowerHint": "CAMERA_STREAMING_SECURE",
+      "Node": "CameraHalCpuset",
+      "Duration": 0,
+      "Value": "0-7"
     },
     {
       "PowerHint": "CAMERA_SHOT",
@@ -619,13 +594,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "0"
+      "Value": "600000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "0"
+      "Value": "1114800000"
     },
     {
       "PowerHint": "ML_ACC",
