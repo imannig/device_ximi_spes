@@ -65,7 +65,6 @@
         "465000000",
         "320000000"
       ],
-      "DefaultIndex": 3,
       "ResetOnInit": true
     },
     {
@@ -315,7 +314,7 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 3000,
-      "Value": "2400000"
+      "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
@@ -381,7 +380,7 @@
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1000,
-      "Value": "2400000"
+      "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -393,7 +392,7 @@
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 1000,
-      "Value": "1900800"
+      "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -405,7 +404,7 @@
       "PowerHint": "CAMERA_STREAMING_MID",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1766400"
+      "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
@@ -429,7 +428,7 @@
       "PowerHint": "CAMERA_STREAMING_HIGH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1766400"
+      "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_STREAMING_HIGH",
@@ -465,7 +464,7 @@
       "PowerHint": "CAMERA_STREAMING_LOW",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1766400"
+      "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_STREAMING_LOW",
@@ -495,7 +494,7 @@
       "PowerHint": "CAMERA_STREAMING_SECURE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1766400"
+      "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_STREAMING_SECURE",
@@ -519,7 +518,7 @@
       "PowerHint": "CAMERA_SHOT",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1000,
-      "Value": "2400000"
+      "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_SHOT",
