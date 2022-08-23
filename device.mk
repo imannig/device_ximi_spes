@@ -649,6 +649,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.sensors.hal_trigger_ssr=false \
     persist.vendor.sensors.support_direct_channel=false
 
+# Service reschedule
+PRODUCT_PRODUCT_PROPERTIES += \
+persist.sys.am.reschedule_service=true
+
 # SoC
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI
