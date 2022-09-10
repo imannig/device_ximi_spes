@@ -249,6 +249,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     drm.service.enabled=true
 
+# Elixir
+PRODUCT_VENDOR_PROPERTIES += \
+    org.elixir.device=Redmi Note 11
+
 # Fastboot
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
