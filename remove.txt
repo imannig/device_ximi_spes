@@ -1,3 +1,5 @@
 device/xiaomi
 vendor/xiaomi
 kernel/xiaomi
+packages/apps/GCamGOPrebuilt
+hardware/xiaomi

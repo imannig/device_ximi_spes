@@ -13,3 +13,4 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 har
 rm -rf hardware/xiaomi/megvii
 git clone https://github.com/imannig/vendor_xiaomi_spes -b tiramisu vendor/xiaomi/spes
 git clone https://github.com/Jabiyeff/kernel_xiaomi_spes_header --depth=1 kernel/xiaomi/spes
+git clone https://github.com/etylix/packages_apps_GCamGOPrebuilt -b snow packages/apps/GCamGOPrebuilt
