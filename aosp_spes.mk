@@ -11,16 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common Project-Elixir stuff.
+# Inherit some common Ppui stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Project-Elixir Official Stuff
+# Ppui Official Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-ELIXIR_MAINTAINER := Smokey
-ELIXIR_BUILD_TYPE := OFFICIAL
+TARGET_ENABLE_BLUR = false
+PPUI_MAINTAINER := imannig
+TARGET_SUPPORTS_QUICK_TAP  := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+
 
 # Product Specifics
 PRODUCT_NAME := aosp_spes
